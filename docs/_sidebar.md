@@ -4,12 +4,12 @@
   - [Pre Requisite](pre-requisite.md)
   - [Persiapan dan Instalasi](instalasi.md)
 
-- #1 - Backend 101
+- #1 - Backend 101 :lock:
 
-- #2 - Backend lv.2
+- #2 - Backend lv.2 :lock:
 
-- #3 - Deploy Backend dan Frontend 101
+- #3 - Deploy Backend dan Frontend 101 :lock:
 
-- #4 - Frontend lv.2
+- #4 - Frontend lv.2 :lock:
 
-- #5 - Deploy Frontend dan Konklusi
+- #5 - Deploy Frontend dan Konklusi :lock:
