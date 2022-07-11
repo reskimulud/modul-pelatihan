@@ -1,7 +1,7 @@
 - [Home](/)
 - #0
 
-  - [Pre Requisite](pre-requisite.md)
+  - [Sebelum Memulai](pre-requisite.md)
   - [Persiapan dan Instalasi](instalasi.md)
 
 - #1 - Backend 101 :lock:
