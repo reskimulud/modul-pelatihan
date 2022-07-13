@@ -9,6 +9,7 @@
   - [Pengenalan ke Backend](m1-intro-backend.md)
   - [REST Web Service](m2-rest.md)
   - [REST API dengan Hapi.JS](m3-rest-hapi.md)
+  - [Database di Node.JS](m4-database.md)
 
 - #2 - Backend lv.2 :lock:
 
