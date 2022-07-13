@@ -209,4 +209,4 @@ Selamat! Sekarang kita sudah siap untuk memulai membuat hal yang keren saat dike
 
 ---
 
- **[<< Sebelumnya](pre-requisite.md)** <!-- | **[Selanjutnya >>](m1-intro-backend.md)** -->
+ **[<< Sebelumnya](pre-requisite.md)** | **[Selanjutnya >>](m1-intro-backend.md)**

@@ -4,9 +4,9 @@
   - [Sebelum Memulai](pre-requisite.md)
   - [Persiapan dan Instalasi](instalasi.md)
 
-- #1 - Backend 101 :lock:
+- #1 - Backend 101
 
-  <!-- - [Pengenalan ke Backend](m1-intro-backend.md) -->
+  - [Pengenalan ke Backend](m1-intro-backend.md)
 
 - #2 - Backend lv.2 :lock:
 
