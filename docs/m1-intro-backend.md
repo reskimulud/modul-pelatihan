@@ -43,7 +43,7 @@ Untuk mengirimkan permintaan kepada server haruslah memuat informasi yang jelas,
 
 Begitupun juga server akan mengirimkan response beserta informasi yang dibutuhkan oleh client. Tidak begitu berbeda seperti informasi yang dikirimkan client, Server juga mengirimkan **Header** dan **Body**, namun bedanya server akan mengembalikan **Status Line** yang menjadi penunjuk apakah response nya menghasilkan nilai yang **sukses** atau **gagal/error** dengan mengembalikan kode status.
 
-# Daftar Status Line dan Status Code
+<!-- # Daftar Status Line dan Status Code
 
 Biasanya status code berisi 3 digit nilai (2xx, 4xx, 5xx dst). Ada banyak status code yang bisa dikirimkan oleh server, namun untuk sekarang kita hanya perlu mengetahui makna dari angka awal pada setiap status code. Jika berawalan **2**, maka status dari permintaan tersebut **berhasil** diterima oleh server dan mengembalikan nilai yang sukses. Jika berawalan 4 maka permintaan tidak bisa di proses karena terdapat kesalahan client. Dan terakhir jika status code berawalan 5, maka permintaan tidak dapat di proses karena terdapat kesalahan disisi Server.
 
@@ -77,4 +77,6 @@ Berikut daftar kengkapnya :
     - **502 – Bad Gateway**
       Umumnya, HTTP status code ini muncul karena salah satu server menerima respons yang tak beres dari server lainnya. Misalnya, saat penggunaan proxy server.
     - **503 – The server is unavailable to handle this request right now**
-      Kode HTTP status ini terjadi karena server tak bisa memenuhi permintaan Anda saat ini. Mungkin karena server kepenuhan atau yang lainnya.
+      Kode HTTP status ini terjadi karena server tak bisa memenuhi permintaan Anda saat ini. Mungkin karena server kepenuhan atau yang lainnya. -->
+
+**[<< Sebelumnya](instalasi.md)** | **[Selanjutnya >>](m2-rest.md)**
