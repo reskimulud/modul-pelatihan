@@ -11,6 +11,7 @@
   - [REST API dengan Hapi.JS](m3-rest-hapi.md)
   - [Detail Project](m4-detail-project.md)
   - [Membuat Database dan Koneksi](m5-database.md)
+  - [Authentikasi (Login dan Register)](m6-auth.md)
 
 - #2 - Backend lv.2 :lock:
 
