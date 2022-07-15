@@ -92,13 +92,40 @@ Untuk membantu lebih mamahaminya, silahkan baca artikel berikut saat waktu luang
 
 Untuk saat ini mari kita lanjutkan ke aplikasi kita!
 
+# Konfigursi untuk Migration
+
+Seperti yang telah disampaikan pada modul sebelumnya, bahwa kita akan menggunakan metode migrasi. Migrasi (migration) di dalam database berfungsi untuk menjalankan query database (seperti pembuatan table biasanya) supaya kita tidak perlu membuka tools seperti phpMyAdmin setiap kali kita ingin membuat table baru. Kita cukup mendefinisikan sebuah file migrasi, dan dengan menjalankan perintah di termintal table tersebut akan otomatis dibuatkan. Keren bukan?
+
+Untuk membuat migrasi di projek node, kita membutuhkan dependency `mysql-migrations`, mari kita install terlebih dahulu dependency tersebut
+
+```bash
+npm install mysql-migrations
+```
+
+Setelah terinstal kita buat sebuah file bernama `Migration.js` di dalam folder `conf`. Di dalam file tersebut jangan lupa untuk menginport dependency yang telah kita install, selain itu import juga konfigurasi database karena kita akan membuat koneksi ke database.
+
+```js
+const migration = require('mysql-migrations');
+const Database = require('./Database');
+```
+
+Setelah itu kita akan membuat sebuah object (instance) dari class Database yang akan kita gunakan sebagai koneksi. Lalu kita panggil method `init()` untuk menjalankan migrasinya.
+
+```js
+const database = new Database();
+
+migration.init(database.connection, __dirname + '/migrations');
+```
+
+Prameter pertama di method init() adalah koneksi ke database, dan yang kedua adalah **path** atau folder dimana file-file migrasi akan disimpan. Karena belum terdapat folder `migrations`, maka langsung saja kita buat folder tersebut. Jangan lupa disimpannya di dalam folder `conf` yaah!.
+
 # Simpan perubahan ke Git dan GitHub
 
-Saat ini kita telah selesai melakukan konfigurasi database dan siap digunakan. Selanjutnya kita akan merekam atau menyimpan progres kita kedalam repository Git (commit). Jalankan perintah berikut untuk membuat `commit`
+Saat ini kita telah selesai melakukan konfigurasi database beserta konfigurasi migrasi nya dan siap digunakan. Selanjutnya kita akan merekam atau menyimpan progres kita kedalam repository Git (commit). Jalankan perintah berikut untuk membuat `commit`
 
 ```bash
 git add .
-git commit -m "membuat konfigurasi untuk koneksi ke database"
+git commit -m "membuat konfigurasi untuk koneksi ke database dan konfigurasi migration"
 gith push
 ```
 
