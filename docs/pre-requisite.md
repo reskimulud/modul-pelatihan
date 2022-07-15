@@ -61,7 +61,8 @@ Contoh sintaks JavaScript **berorientasi objek (OOP)**
 ```js
 // mendefinisikan class (cetakan)
 class Animals {
-  constructor(name, legs, isMamal) {
+  constructor(className, name, legs, isMamal) {
+    this.className = className;
     this.name = name;
     this.legs = legs;
     this.isMamal = isMamal;
@@ -71,11 +72,11 @@ class Animals {
 // membuat class Cat yang inherit (menjadi turunan) ke class Animals
 class Cat extends Animals {
   constructor(name, legs) {
-    super(name, legs, true);
+    super('Kucing', name, legs, true);
   }
 
   run() {
-    return `Kucing ${this.name} berlari menggunakan ke-${this.legs} kakinya`;
+    return `${this.className} ${this.name} berlari menggunakan ke-${this.legs} kakinya`;
   }
 }
 
