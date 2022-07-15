@@ -24,7 +24,7 @@ console.log('Hello World!');
   * Terdapat dua lingkungan umum untuk menjalankan JavaScript, yaitu browser dan Node.js
   * JavaScript dikembangkan dengan standar ECMAScript. Update besar terakhir tersaji dalam versi ES6 pada tahun 2015. Sejak saat itu, tiap tahun JavaScript melakukan update bersifat minor.
 
-Karena pelatihan ini sepenuhnya akan menggunakan bahasa pemrograman `JavaScript` maka dibutuhkan kemampuan dasar untuk mengembangkan aplikasi menggunakan JavaScript seperti mendeklarasikan `variable`, mengetahui penggunaan `tipe data` membuat `function` dan sebagainya.
+Karena pelatihan ini sepenuhnya akan menggunakan bahasa pemrograman `JavaScript` maka dibutuhkan kemampuan dasar untuk mengembangkan aplikasi menggunakan JavaScript seperti mendeklarasikan `variable`, mengetahui penggunaan `tipe data` membuat `function`, `pemrograman berorientasi object` dan sebagainya.
 
 ### Sintaks Dasar
 
@@ -54,6 +54,34 @@ function sayHello() { // pendeklarasian function
 // memanggil function sayHello() dan mencetaknya di console
 console.log(sayHello());
 // output : Hallo, saya Reski Mulud Muchamad! usia saya 21 tahun, dan saya menyukai club Manchester City
+```
+
+Contoh sintaks JavaScript **berorientasi objek (OOP)**
+
+```js
+// mendefinisikan class (cetakan)
+class Animals {
+  constructor(name, legs, isMamal) {
+    this.name = name;
+    this.legs = legs;
+    this.isMamal = isMamal;
+  }
+}
+
+// membuat class Cat yang inherit (menjadi turunan) ke class Animals
+class Cat extends Animals {
+  constructor(name, legs) {
+    super(name, legs, true);
+  }
+
+  run() {
+    return `Kucing ${this.name} berlari menggunakan ke-${this.legs} kakinya`;
+  }
+}
+
+const jimeng = new Cat('Jimeng', 4);
+console.log(jimeng.run());
+// output : "Kucing Jimeng berlari menggunakan ke-4 kakinya"
 ```
 
 ### Materi Pendukung
