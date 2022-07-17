@@ -12,6 +12,7 @@
   - [Detail Project](m4-detail-project.md)
   - [Membuat Database dan Koneksi](m5-database.md)
   - [Authentikasi (Login dan Register)](m6-auth.md)
+  - [Error Handling](m7-error-handling.md)
 
 - #2 - Backend lv.2 :lock:
 

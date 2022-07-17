@@ -119,6 +119,17 @@ migration.init(database.connection, __dirname + '/migrations');
 
 Prameter pertama di method init() adalah koneksi ke database, dan yang kedua adalah **path** atau folder dimana file-file migrasi akan disimpan. Karena belum terdapat folder `migrations`, maka langsung saja kita buat folder tersebut. Jangan lupa disimpannya di dalam folder `conf` yaah!.
 
+Setelah itu di dalam file `package.json` buatlah script baru untuk membuat file migrasi
+
+```json
+{
+  "script": {
+    ...
+    "migration": "node ./src/conf/Migration.js"
+  }
+}
+```
+
 # Simpan perubahan ke Git dan GitHub
 
 Saat ini kita telah selesai melakukan konfigurasi database beserta konfigurasi migrasi nya dan siap digunakan. Selanjutnya kita akan merekam atau menyimpan progres kita kedalam repository Git (commit). Jalankan perintah berikut untuk membuat `commit`
