@@ -13,6 +13,7 @@
   - [Membuat Database dan Koneksi](m5-database.md)
   - [Authentikasi (Login dan Register)](m6-auth.md)
   - [Error Handling](m7-error-handling.md)
+  - [Products](m8-products.md)
 
 - #2 - Backend lv.2 :lock:
 

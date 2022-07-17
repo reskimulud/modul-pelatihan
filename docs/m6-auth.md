@@ -122,7 +122,7 @@ npm install bcrypt nanoid
 
 > bcrypt digunakan untuk **mengenkripsi password**, dan nanoid untuk membuat random string yang akan kita gunakan untuk membuat **id**
 
-Di dalam folder `services` buatlah file dengan nama `AuthenticationService.js`, dan buat *constructor* nya
+Di dalam folder `services` buatlah folder `mysql` dan didalamnya buat file dengan nama `AuthenticationService.js`, dan buat *constructor* nya
 
 ```js
 class AuthenticationService {
