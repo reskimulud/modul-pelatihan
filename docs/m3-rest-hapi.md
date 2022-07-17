@@ -175,4 +175,4 @@ npm run start-dev
 
 Selamat! Kita telah membuat API menggunakan framework Hapi.JS. Selanjutnya kita akan mengimplementasikannya langsung sesuai studi kasus **eShop**
 
-**[<< Sebelumnya](m2-rest.md)** | **[Selanjutnya >>](m4-database.md)**
+**[<< Sebelumnya](m2-rest.md)** | **[Selanjutnya >>](m4-detail-project.md)**
