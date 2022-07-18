@@ -140,6 +140,7 @@ Selanjutnya buat method untuk mendaftar akun baru (register), fungsi yang dibuat
 
 ```js
 const {nanoid} = require('nanoid');
+const bcrypt = require('bcrypt');
 class AuthenticationService {
   ...
 
