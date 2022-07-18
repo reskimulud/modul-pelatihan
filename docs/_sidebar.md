@@ -19,6 +19,8 @@
 
   - [Tokenisasi](m9-tokenization.md)
   - [Authorization](m10-authorization.md)
+  - [Carts (Keranjang Belanja)](m11-carts.md)
+  - [Transactions](m12-transactions.md)
 
 - #3 - Deploy Backend dan Frontend 101 :lock:
 

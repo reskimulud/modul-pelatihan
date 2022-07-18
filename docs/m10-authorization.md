@@ -13,8 +13,8 @@ class AuthenticationHandler {
   ....
 
   async getUser(request, h) {
-    const { id: userId } = request.auth.credentials;
-    const user = await this.#service.getUserById(userId);
+    const { id } = request.auth.credentials;
+    const user = await this.#service.getUserById(id);
 
     ...
   }
@@ -23,7 +23,7 @@ class AuthenticationHandler {
 }
 ```
 
-Setelah itu buka file `routes.js` dan tambahkan option untuk menambahkan auth tokenisasi pada method `GET` user
+Setelah itu buka file `routes.js` dan tambahkan option untuk menambahkan auth tokenisasi pada method `GET` user serta hapus **param** `{id}`
 
 ```js
 const routes = (handler) => [
@@ -52,4 +52,4 @@ git commit -m "menambahkan authorization"
 git push
 ```
 
-**[<< Sebelumnya](m9-tokenization.md)** <!--| **[Selanjutnya >>](m10-authorization.md)** -->
+**[<< Sebelumnya](m9-tokenization.md)** | **[Selanjutnya >>](m11-carts.md)**
