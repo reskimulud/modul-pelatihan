@@ -401,7 +401,7 @@ class AuthenticationHandler {
   ...
 
   async getUser(request, h) {
-    const { id } = request.params;
+    const { id: userId } = request.params;
     const user = await this.#service.getUserById(userId);
 
     return {
