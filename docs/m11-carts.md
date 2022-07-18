@@ -121,7 +121,7 @@ class CartsService {
 }
 ```
 
-Mantap, setelah itu kita akan membuat method untuk mengambil semua item dari keranjang belanja yang ditambahkan oleh user (jadi hanya menampilkan daftar item yang hanya dimiliki oleh user yang meminta data saja).
+Mantap, setelah itu kita akan membuat method untuk mengambil semua item dari keranjang belanja yang ditambahkan oleh user (jadi hanya menampilkan daftar item yang hanya dimiliki oleh user yang meminta data saja). Untuk mengambil data keranjang belanja dengan mengambil informasi produknya, kita akan menggunakan query **JOIN**.
 
 ```js
 class CartsService {
@@ -252,6 +252,8 @@ const CartsValidator = {
 
 module.exports = CartsValidator;
 ```
+
+# Plugin Carts (routes, handler)
 
 Sip. Sekarang mari kita lanjutkan untuk membuat plugin nya, mulai dari membuat **routes** dan **handler** nya. Pertama kita buat folder `carts` di dalam folder `api`, setelah itu buat file `index.js`, `routes.js` dan `handler.js` di dalam folder carts.
 
@@ -463,8 +465,6 @@ const CartsValidator = require('./validator/carts');
 ...
 
 const init = async () => {
-  const database = new Database();
-  ...
   const service = new CartsService(database);
 
   ...

@@ -21,6 +21,7 @@
   - [Authorization](m10-authorization.md)
   - [Carts (Keranjang Belanja)](m11-carts.md)
   - [Transactions](m12-transactions.md)
+  - [Upload File ke Server](m13-upload.md)
 
 - #3 - Deploy Backend dan Frontend 101 :lock:
 
