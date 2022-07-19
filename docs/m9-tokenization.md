@@ -2,13 +2,13 @@
 
 Kita telah selesai membuat fitur login dan register serta telah membuat fitur products, namun masih ada kendala khususnya di keamanan. Dalam fitur menambah atau mengubah data produk, siapapun dapat mengambil dan mengubah data **bahkan belum login** sekalipun. Ini sangat berbahaya jika dibiarkan. Untuk mengamankannya, kita akan membuat metode **tokenisasi**, dimana ketika client ingin mengubah isi data atau menambahkan data baru harus ter-authorisasi dengan cara login terlebih dahulu, dan di setiap request nya harus **disertai dengan token**.
 
-Untuk membuat token kita akan membutuhkan sebuah library yang namanya **Json Web Token** ([JWT](htps://jwt.io)). Sesuai namanya, JWT menggunakan string JSON sebagai datanya, setelah itu akan di encode menjadi **bash64**. Untuk membuat JWT kita memerlukan sebuah **secret key**. Semakin rumit secret key nya, maka akan semakin aman pula token JWT nya.
+Untuk membuat token kita akan membutuhkan sebuah standar yang namanya **Json Web Token** ([JWT](htps://jwt.io)). Sesuai namanya, JWT menggunakan string JSON sebagai datanya, setelah itu akan di encode menjadi **bash64**. Untuk membuat JWT kita memerlukan sebuah **secret key**. Semakin rumit secret key nya, maka akan semakin aman pula token JWT nya.
 
 Tidak perlu berlama-lama, mari kita implementasikan JWT pada aplikasi kita!
 
 # Install JWT di NPM
 
-Sebelum memulai, pastikan terlebih dahulu kita telah meninstall JWT. Framework Hapi telah menyediakan sebuah **plugin eksternal** untuk menggunakan JWT. Langsung saja kita install dengan menjalankan perintah berikut
+Framework Hapi telah menyediakan sebuah **plugin eksternal** untuk membuat tokenisasi menggunakan standar JWT. Langsung saja kita install dengan menjalankan perintah berikut
 
 ```bash
 npm install @hapi/jwt
