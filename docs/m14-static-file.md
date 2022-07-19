@@ -67,4 +67,4 @@ git commit -m "menambahkan metode untuk mengakses file gambar dari server"
 git push
 ```
 
-**[<< Sebelumnya](m13-upload.md)** | **[Selanjutnya >>]()**
+**[<< Sebelumnya](m13-upload.md)** | **[Selanjutnya >>](m15-deploy-backend.md)**

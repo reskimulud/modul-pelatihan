@@ -26,6 +26,8 @@
 
   - [Upload File ke Server](m13-upload.md)
   - [Mengakses file dari Server](m14-static-file.md)
+  - [Mendeploy (Mendistribusikan) API eShop ke Heroku](m15-deploy-backend.md)
+  - [Pengenalan ke Frontend](m16-intro-frontend.md)
 
 - #4 - Frontend lv.2 :lock:
 
