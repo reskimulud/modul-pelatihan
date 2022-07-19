@@ -276,4 +276,4 @@ git commit -m "menambahkan fitur carts"
 git push
 ```
 
-**[<< Sebelumnya](m12-transactions.md)** <!--| **[Selanjutnya >>](m11-carts.md)** -->
+**[<< Sebelumnya](m12-transactions.md)** | **[Selanjutnya >>](m14-static-file.md)**
