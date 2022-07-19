@@ -16,10 +16,24 @@ npm install @hapi/jwt
 
 # Membuat Secret Key
 
-Sekarang kita akan membuat sebuah secret key. Buka file `.env` dan buat variable berikut
+Secret key adalah sebuah key untuk enkripsi data token JWT. Untuk membuat random secret key, pertama jalankan perintah berikut
+
+```bash
+node
+```
+
+Maka Node REPL akan muncul. Ketika REPL akan muncul, jalankan perintah berikut
+
+```bash
+require('crypto').randomBytes(64).toString('hex')
+```
+
+Maka akan muncul sebuah string panjang. Itu yang nanti akan kita gunakan sebagai secret key. Untuk keluar dari REPL, klik `Ctrl+C` dua kali.
+
+Sekarang kita akan memasukan secret key kedalam variable environment. Buka file `.env` dan buat variable berikut
 
 ```.env
-TOKEN_KEY=71aa13d1119702e7437790f140d7c3493f5d0234bad9fc388f4bfc38a218044dd39cbdb9cfa62a4dfb2959cb52822b43d1c8370a868c11a6eb629ec68d975b74
+TOKEN_KEY=<secret key>
 ```
 
 Key di atas akan kita gunakan sebagai secret key saat akan membuat token JWT.
